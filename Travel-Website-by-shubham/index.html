@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours to Tuscany</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../FrontEnd Task/logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Tour Packages</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Eng</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Fr</a></li>
+                            <li><a href="#">Es</a></li>
+                            <li><a href="#">De</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#" class="signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+        <div class="hero">
+            <h1>Enjoy in the best way!</h1>
+            <p>Enjoy our services for your trip anytime</p>
+            <div class="search-box">
+                <div class="tour-options">
+                    <button class="active">Public Tours</button>
+                    <button>Private Tours</button>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="people">Number of people</label>
+                        <select id="people">
+                            <option>Choose number</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="tour">Tour</label>
+                        <select id="tour">
+                            <option>Select Tour</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transport">Transportation</label>
+                        <select id="transport">
+                            <option>Select Transportation</option>
+                        </select>
+                    </div>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>   <br><br><br> <br><br><br><br><br><br><br><br><br>
+        
+
+        <section class="popular-destinations">
+
+            <div class="popular-destinations">
+
+                <h2>Explore Our Popular Destinations</h2> <br><br><br>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="../FrontEnd Task/Hero Page/popular_dest/popular_dest_1.svg" alt="Lucca Bike Tour">
+                        <h3>Lucca Bike Tour</h3>
+                        <p>from <span class="price">34 €</span></p>
+                        <ul>
+                            <li><i class="fas fa-calendar"></i> EVERY DAY</li>
+                            <li><i class="fas fa-users"></i> 3-10 PP</li>
+                        </ul>
+                        <p>A tour of the city and its surroundings led by a professional guide ...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../FrontEnd Task/Hero Page/popular_dest/popular_dest_2.svg"
+                            alt="Wine Tasting in Tuscany">
+                        <h3>Wine Tasting in Tuscany</h3>
+                        <p>from <span class="price">34 €</span></p>
+                        <ul>
+                            <li><i class="fas fa-calendar"></i> MONDAY</li>
+                            <li><i class="fas fa-users"></i> 10-30 PP</li>
+                        </ul>
+                        <p>The real magic is here where you can enjoy the best Tuscan wine and eat ...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../FrontEnd Task/Hero Page/popular_dest/popular_dest_3.svg" alt="Cinque Terre Tour">
+                        <h3>Cinque Terre Tour</h3>
+                        <p>from <span class="price">34 €</span></p>
+                        <ul>
+                            <li><i class="fas fa-calendar"></i> TO BE DECIDED</li>
+                            <li><i class="fas fa-users"></i> 10-50 PP</li>
+                        </ul>
+                        <p>Visiting the 5 Terre is a must, and you can never go there enough ...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../FrontEnd Task/Hero Page/popular_dest/popular_dest_4.svg"
+                            alt="Siena and Surroundings">
+                        <h3>Siena and Surroundings</h3>
+                        <p>from <span class="price">34 €</span></p>
+                        <ul>
+                            <li><i class="fas fa-calendar"></i> TO BE DECIDED</li>
+                            <li><i class="fas fa-users"></i> 5-10 PP</li>
+                        </ul>
+                        <p>Visit the beautiful Siena and the cities that surround it to experience ...</p>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-slide"></button>
+                    <button class="carousel-btn next-slide">></button>
+                </div>
+
+                <div class="company-info">
+                    <div class="info-image">
+                        <img src="../FrontEnd Task/Hero Page/best_company/best_company01.svg" alt="Tourist with map">
+                    </div>
+                    <div class="info-text">
+                        <h3>We are the best company for your visit</h3>
+                        <p>After decades of experience, we offer the most complete tourism service in the city. Choose
+                            our guides and drivers for your every need! We provide the best packages to make your trip
+                            unforgettable.</p>
+                        <div class="stats">
+                            <div><span>20+</span>
+                                <p>Years Experience</p>
+                            </div>
+                            <div><span>100+</span>
+                                <p>Happy Customers</p>
+                            </div>
+                            <div><span>15+</span>
+                                <p>Choice of Services</p>
+                            </div>
+                            <div><span>10+</span>
+                                <p>Professional Guides</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  <br><br><br><br><br><br>
+
+
+        <section class="special-offers">
+            <section class="special-offers-section">
+                <div class="content-container">
+                    <div class="text-content">
+                        <h2>Get Special Offers for Organizations</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <button class="contact-us-btn">Contact Us</button>
+                    </div>
+                    <div class="image-content">
+                        <img src="../FrontEnd Task/Hero Page/special_offers/special_offers01.svg" alt="Special Offer Image">
+                    </div>
+                </div>
+            </section> <br><br><br><br><br>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="../FrontEnd Task/Hero Page/services/services01.svg" alt="Bike and rickshaw rental">
+                    <h3>Bike and rickshaw rental</h3>
+                    <p>Book your quality vehicle quickly for an hour or all day!</p>
+                </div>
+                <div class="offer-card">
+                    <img src="../FrontEnd Task/Hero Page/services/services02.svg" alt="Guided tour of the countryside">
+                    <h3>Guided tour of the countryside</h3>
+                    <p>Live the real Lucchese experience by visiting the suburbs by bike!</p>
+                </div>
+                <div class="offer-card">
+                    <img src="../FrontEnd Task/Hero Page/services/services03.svg" alt="Taxi and NCC service">
+                    <h3>Taxi and NCC service</h3>
+                    <p>Do you need not only a bike but also a driver? Then you have found the right place!</p>
+                </div>
+                <div class="offer-card">
+                    <img src="../FrontEnd Task/Hero Page/services/services04.svg" alt="Bus Package">
+                    <h3>Bus Package</h3>
+                    <p>Do you need not only a bike but also a driver? Then you have found the right place!</p>
+                </div>
+            </div>
+        </section> 
+        
+        <section class="booking-section">
+            <div class="form-container">
+                <h2>Book Now Bike</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name and Surname</label>
+                            <input type="text" id="name" placeholder="Enter your name and surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telephone">Telephone Number</label>
+                            <input type="tel" id="telephone" placeholder="Enter your telephone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service">
+                                <option>Select the service types</option>
+                                <option>Bike Repair</option>
+                                <option>General Maintenance</option>
+                                <option>Custom Services</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="book-now-btn">Book Now</button>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="../FrontEnd Task/Hero Page/book_a_bike/bike picture.png" alt="Bike Image">
+            </div>
+        </section>
+
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
