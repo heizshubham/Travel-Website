@@ -650,33 +650,37 @@ body {
 
 .booking-section {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
     justify-content: space-between;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; 
     width: 100%;
-    background: linear-gradient(90deg, rgba(255, 153, 102, 0.7), rgba(255, 204, 153, 0.7));
+    background: linear-gradient(to right, #F9E4C0, #FFB074); /* Background gradient */
     border-radius: 15px;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%; /* Limit max width for larger screens */
+    min-height: 50px; /* Set a lower minimum height */
 }
 
 
 .form-container {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 100%; 
+    max-width: 400px; /* Limit max width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .form-container h2 {
     margin-bottom: 20px;
     color: #FF6600;
+    text-align: center; /* Center align the title */
 }
 
 .form-row {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -684,7 +688,7 @@ body {
 .form-group {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    margin-bottom: 15px; /* Space between fields */
 }
 
 .form-group label {
@@ -692,26 +696,35 @@ body {
     font-weight: bold;
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
 }
 
 .book-now-btn {
     background-color: #FF6600;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
+    padding: 10px; /* Add padding for the button */
     transition: background-color 0.3s;
+    width: 100%; /* Full width for the button */
 }
 
 .book-now-btn:hover {
     background-color: #ff8533;
+}
+
+.image-container {
+    flex: 1; /* Allow the image container to grow */
+    min-width: 300px; /* Minimum width */
+    display: flex;
+    justify-content: center; /* Center align the image */
 }
 
 .image-container img {
@@ -719,6 +732,40 @@ body {
     border-radius: 10px;
     margin-left: 30px;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center; /* Center items */
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between form and image */
+    }
+
+    .image-container {
+        margin-left: 0; /* Remove left margin on small screens */
+        text-align: center; /* Center the image */
+    }
+    
+    .form-row {
+        flex-direction: column; /* Stack form fields on small screens */
+        align-items: stretch; /* Align fields to full width */
+    }
+
+    .form-group {
+        width: 100%; /* Full width for each input on small screens */
+    }
+
+    .form-row .form-group {
+        width: 100%; /* Override to ensure full width */
+    }
+}
+
 
 @media (max-width: 768px) {
     .booking-section {
@@ -737,6 +784,238 @@ body {
 
 
 
+/* Add this CSS to your existing stylesheet */
+.popular-packages {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Change to your preferred background color */
+    text-align: center;
+}
+
+.popular-packages h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333; /* Change to your preferred color */
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.package-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    width: calc(25% - 20px); /* Card width for larger screens */
+    transition: transform 0.3s; /* Smooth scale on hover */
+}
+
+.package-card img {
+    width: 100%; /* Full-width image */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.package-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333; /* Change to your preferred color */
+}
+
+.package-card p {
+    font-size: 1.25rem;
+    color: #ff6600; /* Price color */
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.package-card ul li {
+    margin: 5px 0;
+    color: #666; /* Change to your preferred color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff6600; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc5200; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .package-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .package-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .package-card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+
+
+/* Add this CSS to your existing stylesheet */
+.customer-testimonials {
+    padding: 40px 20px;
+    background-color: #fff; /* Change to your preferred background color */
+    text-align: center;
+}
+
+.customer-testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333; /* Change to your preferred color */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.testimonial-card {
+    background-color: #f0f0f0; /* Light grey background for the testimonial card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 300px; /* Fixed width for each card */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s; /* Smooth scale on hover */
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #666; /* Text color */
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    color: #333; /* Change to your preferred color */
+    margin: 5px 0;
+}
+
+.testimonial-card img {
+    width: 50px; /* Set a fixed width for the image */
+    height: 50px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Circular image */
+    margin-top: 10px; /* Space above the image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+
+/* Add this CSS to your existing stylesheet */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust as needed */
+}
+
+.footer-section {
+    flex: 1; /* Equal space for each section */
+    min-width: 200px; /* Minimum width */
+    margin: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #f39c12; /* Orange color for headings */
+}
+
+.footer-section ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-section p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555; /* Separator line */
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ccc; /* Light grey text color */
+}
+
+.social-media {
+    display: flex;
+    gap: 15px; /* Space between social media links */
+}
+
+.social-media li {
+    display: inline; /* Horizontal list */
+}
+
+.social-media a {
+    color: #f39c12; /* Orange color for links */
+    text-decoration: none; /* No underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .footer-section {
+        text-align: center; /* Center text in each section */
+    }
+}
 
 
 
@@ -848,3 +1127,6 @@ body {
         gap: 10px;
     }
 }
+
+
+
