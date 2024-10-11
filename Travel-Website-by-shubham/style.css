@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -216,9 +219,10 @@ form button {
 }
 
 
+
 .popular-destinations {
     padding: 50px 20px;
-}
+  }
 
 .popular-destinations h2 {
     font-size: 2.5em;
@@ -232,7 +236,7 @@ form button {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
-}
+  }
 
 .card {
     background-color: #fff;
@@ -242,7 +246,8 @@ form button {
     max-width: 22%;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    min-height: 500px;
+  }
 
 .card:hover {
     transform: scale(1.05);
@@ -566,7 +571,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    height: 400px;
 }
 
 .content-container {
@@ -615,8 +620,9 @@ body {
 }
 
 .image-content img {
-    max-width: 500px;
-    height: auto;
+    max-width: 400px;
+    height: 600px;
+    margin-top: -150px;
 }
 
 @media (max-width: 768px) {
@@ -642,6 +648,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 body {
     font-family: Arial, sans-serif;
@@ -935,90 +943,113 @@ body {
 
 
 
-/* Add this CSS to your existing stylesheet */
-footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 40px 20px;
-}
-
-.footer-container {
+ 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-top {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    width: 80px; 
+    margin-right: 15px;
+  }
+  
+  .footer-logo h2 {
+    color: #ffa500;
+    font-size: 1.5rem;
+  }
+  
+  .footer-content {
+    display: flex;
     justify-content: space-between;
-}
-
-.footer-logo img {
-    max-width: 150px; /* Adjust as needed */
-}
-
-.footer-section {
-    flex: 1; /* Equal space for each section */
-    min-width: 200px; /* Minimum width */
-    margin: 20px;
-}
-
-.footer-section h4 {
-    margin-bottom: 15px;
-    color: #f39c12; /* Orange color for headings */
-}
-
-.footer-section ul {
-    list-style-type: none; /* No bullet points */
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px; /* Space between list items */
-}
-
-.footer-section p {
-    margin: 5px 0; /* Space between paragraphs */
-}
-
-.footer-bottom {
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #ffa500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-section ul li i {
+    margin-right: 8px;
+  }
+  
+  .social-media .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: #ffa500;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff8700;
+  }
+  
+  .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid #555; /* Separator line */
-    padding-top: 10px;
-}
-
-.footer-bottom p {
-    margin: 0;
-    color: #ccc; /* Light grey text color */
-}
-
-.social-media {
-    display: flex;
-    gap: 15px; /* Space between social media links */
-}
-
-.social-media li {
-    display: inline; /* Horizontal list */
-}
-
-.social-media a {
-    color: #f39c12; /* Orange color for links */
-    text-decoration: none; /* No underline */
-}
-
-.social-media a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Stack sections on small screens */
-        align-items: center; /* Center align */
+    font-size: 0.9rem;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .footer-section {
-        text-align: center; /* Center text in each section */
+      text-align: center;
     }
-}
-
-
+  }
+  
+  
 
 
 
