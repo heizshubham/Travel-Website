@@ -520,13 +520,13 @@ body {
 .offers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller card size */
-    gap: 15px; /* Reduce gap between cards */
-    margin: 50px 200px; /* Add margin around the grid */
+    gap: 20px; /* Reduce gap between cards */
+    margin: 100px 30px; /* Add margin around the grid */
 }
 
 .offer-card {
     background-color: white;
-    border-radius: 10px; /* Reduce the roundness of the corners */
+    border-radius: 20px; /* Reduce the roundness of the corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Softer box shadow */
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -663,14 +663,15 @@ body {
 
 
 .form-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); /* Set background to transparent white */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; 
+    width: 100%;
     max-width: 400px; /* Limit max width */
     box-sizing: border-box; /* Include padding in width calculation */
 }
+
 
 .form-container h2 {
     margin-bottom: 20px;
@@ -806,7 +807,7 @@ body {
 
 .package-card {
     background-color: #fff; /* White background for the card */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 20px;
     text-align: left; /* Align text to the left */
@@ -816,7 +817,7 @@ body {
 
 .package-card img {
     width: 100%; /* Full-width image */
-    border-radius: 10px; /* Rounded corners for the image */
+    border-radius: 20px; /* Rounded corners for the image */
 }
 
 .package-card h3 {
