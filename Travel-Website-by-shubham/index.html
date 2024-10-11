@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Tours to Tuscany</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,11 +35,12 @@
                 </ul>
             </nav>
         </div>
+        
 
 
         <div class="hero">
-            <h1>Enjoy in the best way!</h1>
-            <p>Enjoy our services for your trip anytime</p>
+            <h2 class="header-text">Enjoy in the best way!</h2>
+            <h3>Enjoy our services for your trip anytime</h3>
             <div class="search-box">
                 <div class="tour-options">
                     <button class="active">Public Tours</button>
@@ -248,58 +250,68 @@
 
         <section class="popular-packages">
             <h2>The Most Popular Packages</h2>
-            <div class="packages-container">
+            <div class="package-container">
+
                 <div class="package-card">
-                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package01.svg" alt="Bike/Rickshaw" />
-                    <h3>BIKE / RICKSHAW</h3>
-                    <p>€ 10 /day</p>
-                    <ul>
-                        <li>Your bike for a day</li>
-                        <li>City App</li>
-                        <li>Discount on Rickshaw</li>
-                        <li>Guaranteed Support</li>
-                    </ul>
-                    <a href="#" class="btn">Book Now</a>
+                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package01.svg" alt="Rickshaw">
+                    <div class="package-info">
+                        <h3>BIKE / RICKSHAW</h3>
+                        <p class="price">€<span>10</span> /day</p>
+                        <ul>
+                            <li><i class="fas fa-calendar-alt"></i> Your bike for a day</li>
+                            <li><i class="fas fa-map-marker-alt"></i> City App</li>
+                            <li><i class="fas fa-percent"></i> Discount on Rickshaw</li>
+                            <li><i class="fas fa-headset"></i> Guaranteed Support</li>
+                        </ul>
+                        <button class="book-btn">Book Now</button>
+                    </div>
                 </div>
 
                 <div class="package-card">
-                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package02.svg" alt="Bike Tours" />
-                    <h3>BIKE TOURS</h3>
-                    <p>€ 30 /day</p>
-                    <ul>
-                        <li>A Mountain Bike Included</li>
-                        <li>A Guide For You</li>
-                        <li>Bottle of water</li>
-                        <li>Guaranteed Support</li>
-                    </ul>
-                    <a href="#" class="btn">Book Now</a>
+                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package02.svg" alt="Bike Tours">
+                    <div class="package-info">
+                        <h3>BIKE TOURS</h3>
+                        <p class="price">€<span>30</span> /day</p>
+                        <ul>
+                            <li><i class="fas fa-mountain"></i> A Mountain Bike Included</li>
+                            <li><i class="fas fa-user"></i> A Guide For You</li>
+                            <li><i class="fas fa-water"></i> Bottle of water</li>
+                            <li><i class="fas fa-headset"></i> Guaranteed Support</li>
+                        </ul>
+                        <button class="book-btn">Book Now</button>
+                    </div>
                 </div>
 
                 <div class="package-card">
-                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package03.svg" alt="Bus Trips" />
-                    <h3>BUS TRIPS</h3>
-                    <p>€ 45 /day</p>
-                    <ul>
-                        <li>Park ticket</li>
-                        <li>Return bus</li>
-                        <li>Companion</li>
-                        <li>Guaranteed Support</li>
-                    </ul>
-                    <a href="#" class="btn">Book Now</a>
+                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package03.svg" alt="Bus Trips">
+                    <div class="package-info">
+                        <h3>BUS TRIPS</h3>
+                        <p class="price">€<span>45</span> /day</p>
+                        <ul>
+                            <li><i class="fas fa-ticket-alt"></i> Park ticket</li>
+                            <li><i class="fas fa-bus"></i> Return bus</li>
+                            <li><i class="fas fa-users"></i> Companion</li>
+                            <li><i class="fas fa-headset"></i> Guaranteed Support</li>
+                        </ul>
+                        <button class="book-btn">Book Now</button>
+                    </div>
                 </div>
 
                 <div class="package-card">
-                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package04.svg" alt="Transfer" />
-                    <h3>TRANSFER</h3>
-                    <p>€ 10 /day</p>
-                    <ul>
-                        <li>Personal Driver</li>
-                        <li>Wherever You Want</li>
-                        <li>At the best price</li>
-                        <li>Guaranteed Support</li>
-                    </ul>
-                    <a href="#" class="btn">Book Now</a>
+                    <img src="../FrontEnd Task/Hero Page/popular_package/pop_package04.svg" alt="Transfer">
+                    <div class="package-info">
+                        <h3>TRANSFER</h3>
+                        <p class="price">€<span>10</span> /day</p>
+                        <ul>
+                            <li><i class="fas fa-user-tie"></i> Personal Driver</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Wherever You Want</li>
+                            <li><i class="fas fa-percent"></i> At the best price</li>
+                            <li><i class="fas fa-headset"></i> Guaranteed Support</li>
+                        </ul>
+                        <button class="book-btn">Book Now</button>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -332,70 +344,70 @@
 
         <footer class="footer">
             <div class="container">
-              <div class="footer-top">
-                <div class="footer-logo">
-                  <img src="../FrontEnd Task/logo.svg" alt="Tuscany Logo">
-                  <h2>Tours to Tuscany</h2>
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="../FrontEnd Task/logo.svg" alt="Tuscany Logo">
+                        <h2>Tours to Tuscany</h2>
+                    </div>
                 </div>
-              </div>
-              <hr />
-              <br />
-        
-              <div class="footer-content">
-                <div class="footer-section services">
-                  <h3>Services</h3>
-                  <ul>
-                    <li>Bike and Rickshaw rental</li>
-                    <li>Guided Tours of Lucca</li>
-                    <li>Guided Bike Tour of Lucca</li>
-                    <li>Trip In The Tuscan Hills</li>
-                    <li>Transportation With Luxury Cars</li>
-                    <li>Wine Tours By Bus With Guide</li>
-                  </ul>
+                <hr />
+                <br />
+
+                <div class="footer-content">
+                    <div class="footer-section services">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Bike and Rickshaw rental</li>
+                            <li>Guided Tours of Lucca</li>
+                            <li>Guided Bike Tour of Lucca</li>
+                            <li>Trip In The Tuscan Hills</li>
+                            <li>Transportation With Luxury Cars</li>
+                            <li>Wine Tours By Bus With Guide</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section home">
+                        <h3>Home</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Tour Packages</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section help">
+                        <h3>Help</h3>
+                        <ul>
+                            <li>Terms of Use</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section contacts">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Piazza Napoleone, Lucca, Tuscany</li>
+                            <li><i class="fas fa-phone-alt"></i> +39 346 368 5708</li>
+                            <li><i class="fas fa-envelope"></i> italianlimo@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section social-media">
+                        <h3>Social Media</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="footer-section home">
-                  <h3>Home</h3>
-                  <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Tour Packages</li>
-                  </ul>
+
+                <div class="footer-bottom">
+                    <p>Copyright © 2024. All rights reserved.</p>
                 </div>
-        
-                <div class="footer-section help">
-                  <h3>Help</h3>
-                  <ul>
-                    <li>Terms of Use</li>
-                    <li>Privacy Policy</li>
-                  </ul>
-                </div>
-        
-                <div class="footer-section contacts">
-                  <h3>Contacts</h3>
-                  <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Piazza Napoleone, Lucca, Tuscany</li>
-                    <li><i class="fas fa-phone-alt"></i> +39 346 368 5708</li>
-                    <li><i class="fas fa-envelope"></i> italianlimo@gmail.com</li>
-                  </ul>
-                </div>
-        
-                <div class="footer-section social-media">
-                  <h3>Social Media</h3>
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="footer-bottom">
-                <p>Copyright © 2024. All rights reserved.</p>
-              </div>
             </div>
-          </footer>
-        
+        </footer>
+
 
 
 
