@@ -89,7 +89,7 @@ header {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     min-width: 100px;
     z-index: 1;
-    top: 100%; /* Position the dropdown below the Eng button */
+    top: 100%; 
     left: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -120,7 +120,7 @@ header {
 }
 
 .navbar .dropdown:hover .dropdown-content {
-    max-height: 150px; /* Adjust based on number of languages */
+    max-height: 150px;
 }
 
 
@@ -888,9 +888,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
     overflow: hidden;
-    max-width: 300px; /* Maximum width for large screens */
-    min-width: 280px; /* Minimum width for small screens */
-    flex: 1 1 calc(33.333% - 40px); /* Adjust width for 3 cards per row on large screens */
+    max-width: 300px; 
+    min-width: 280px; 
+    flex: 1 1 calc(33.333% - 40px); 
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
