@@ -70,3 +70,12 @@ window.addEventListener('click', function(e) {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const Menu = document.getElementById('menu');
+    const Nav = document.querySelector('nav');
+
+    Menu.addEventListener('click', () => {
+        Nav.classList.toggle('active');
+    });
+});
+

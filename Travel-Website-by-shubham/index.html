@@ -12,12 +12,12 @@
 
 <body>
     <header>
-        <div class="navbar">
+        <!-- <div class="navbar">
             <div class="logo">
                 <img src="../FrontEnd Task/logo.svg" alt="Logo">
             </div>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Tour Packages</a></li>
@@ -33,8 +33,38 @@
                     <li><a href="#">Login</a></li>
                     <li><a href="#" class="signup">Sign Up</a></li>
                 </ul>
+                <div class="menu" id="menu">
+                    &#9776;
+                </div>
             </nav>
-        </div>
+        </div> -->
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../FrontEnd Task/logo.svg" alt="Logo">
+                </div>
+                <div class="menu" id="menu">
+                    &#9776; 
+                </div>
+                
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a href="#">Eng</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Fr</a></li>
+                                <li><a href="#">Es</a></li>
+                                <li><a href="#">De</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./login.html">login</a></li>
+                    </ul>
+                </nav>
+            </div>
         
 
 
@@ -417,6 +447,16 @@
 
 
     <script src="script.js"></script>
+
+    <script>
+        const Menu = document.getElementById('menu');
+        const Nav = document.querySelector('nav');
+    
+        Menu.addEventListener('click', () => {
+            Nav.classList.toggle('active');
+        });
+    </script>
+    
 </body>
 
 </html>
