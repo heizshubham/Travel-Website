@@ -55,3 +55,14 @@ To run this project locally, follow these steps:
    code .
 
 
+
+This `README.md` file:
+- Describes the project and its purpose.
+- Outlines the features of the website.
+- Lists the technologies used.
+- Provides clear setup and usage instructions.
+- Shows the folder structure of the project.
+- Includes a section for contributing and license.
+
+You can customize this as needed (e.g., add your GitHub link, license information, etc.). Once you have it ready, save it as `README.md` in the root folder of your project.
+
