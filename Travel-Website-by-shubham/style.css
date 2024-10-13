@@ -893,7 +893,7 @@ body {
     flex: 1 1 calc(33.333% - 40px); 
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
   
   /* Hover effect for the card */
